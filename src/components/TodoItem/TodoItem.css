@@ -1,3 +1,4 @@
+/* ========== TASK ITEM CONTAINER ========== */
 .todo-item-container {
     display: flex;         
     align-items: center;      
@@ -6,6 +7,7 @@
     gap: 8px;  
 }
 
+/* ========== TASK CONTENT (clickable area) ========== */
 .todo-task {
     display: flex;            
     flex: 1;                 
@@ -13,6 +15,7 @@
     cursor: pointer;              
 }
 
+/* ========== COMPLETION STATUS ICONS ========== */
 .done-icon {
     width: 28px;
 }
@@ -23,6 +26,8 @@
     border: 2px solid #999;      /* Viền xám */
     border-radius: 50%;          /* Bo tròn */
 }
+
+/* ========== TASK TEXT ========== */
 .todo-task p {
     color: #334155;           
     margin-left: 16px;        
@@ -32,6 +37,8 @@
     text-decoration: line-through;  
     color: #999;                   
 }
+
+/* ========== DELETE BUTTON ========== */
 .delete-icon {
     width: 20px;              
     cursor: pointer;     

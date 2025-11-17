@@ -1,3 +1,4 @@
+/* ========== CONTAINER ========== */
 .todo-input-container {
      background-color: white; 
      border: 5px solid #667eea;        
@@ -11,6 +12,7 @@
      border-radius: 12px;
 }
 
+/* ========== TITLE SECTION ========== */
 .todo-title {
     display: flex;           
     align-items: center;     
@@ -31,6 +33,7 @@
     width: 30px;                         
 }
 
+/* ========== INPUT SECTION ========== */
 .todo-input {
     display: flex;              
     align-items: center;        
@@ -67,6 +70,7 @@
     cursor: pointer;  
 }
 
+/* ========== ADD BUTTON ========== */
 .todo-input button {
     border: none;                   
     border-radius: 9999px;          

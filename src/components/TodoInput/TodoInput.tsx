@@ -3,19 +3,27 @@ import './TodoInput.css'
 import todo_icon from '../../assets/schedule.png'
 import TodoItem from '../TodoItem/TodoItem'
 
+// Define Task interface
 interface Task {
   id: number;
   text: string;
   isComplete: boolean;
 }
 const TodoInput = () => {
-    const inputRef = useRef<HTMLInputElement>(null);;
+    // Ref to access input element directly
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    // State: Load tasks from localStorage or empty array
     const [tasks, setTasks] = useState<Task[]>((localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')!) : []));
+    
+    // Add new task
     const add = () => {
         const inputText = inputRef.current!.value.trim();
+        // Validate input is not empty
         if (!inputText) {
             return null;
         }
+        // Create new task object
         const newTode = {
             id: Date.now(),
             text: inputText,
@@ -24,11 +32,13 @@ const TodoInput = () => {
         setTasks((prevTasks) => [...prevTasks, newTode]);
         inputRef.current!.value = '';
     };
-
+    
+    // Delete task by id
     const deleteTask = (id: number) => {
         setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
     };
 
+    // Toggle task completion status
     const toggleComplete = (id: number) => {
         setTasks((prevTasks) =>
             prevTasks.map((task) => {
@@ -39,6 +49,8 @@ const TodoInput = () => {
             })
         );
     };
+
+    // Save tasks to localStorage whenever tasks change
     useEffect(() => {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }, [tasks]);
