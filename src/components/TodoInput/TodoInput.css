@@ -1,5 +1,6 @@
 .todo-input-container {
-     background-color: white;          
+     background-color: white; 
+     border: 5px solid #667eea;        
      place-self: center;                
      width: 91.666667%;               
      max-width: 768px;               
@@ -22,7 +23,8 @@
     font-size: 28px;         
     font-weight: 600;       
     color: #333333;
-    line-height: 36px;          
+    line-height: 36px;
+    font-family: 'Poppins', sans-serif;      
 }
 
 .todo-title img {
