@@ -1,0 +1,83 @@
+.todo-input-container {
+     background-color: white;          
+     place-self: center;                
+     width: 91.666667%;               
+     max-width: 768px;               
+     display: flex;                   
+     flex-direction: column;            
+     padding: 28px;                     
+     min-height: 550px;                 
+     border-radius: 12px;
+}
+
+.todo-title {
+    display: flex;           
+    align-items: center;     
+    margin-top: 28px;        
+    gap: 8px;    
+}
+
+.todo-title h1 {
+    display: flex;
+    font-size: 28px;         
+    font-weight: 600;       
+    color: #333333;
+    line-height: 36px;          
+}
+
+.todo-title img {
+    width: 30px;                         
+}
+
+.todo-input {
+    display: flex;              
+    align-items: center;        
+    margin-top: 28px;          
+    margin-bottom: 28px;        
+    background-color: #e5e7eb;  
+    border-radius: 9999px;
+}
+
+.todo-input input {
+    background-color: transparent;  
+    border-width: 0;                
+    outline: none;                  
+    flex: 1;                        
+    height: 56px;                   
+    padding-left: 24px;             
+    padding-right: 8px;  
+}
+
+.todo-input input::placeholder {
+    color: #475569;
+}
+
+.todo-input button {
+    border: none;                   
+    border-radius: 9999px;          
+    background-color: #ea580c;      
+    width: 128px;                   
+    height: 56px;                   
+    color: white;                   
+    font-size: 18px;                
+    line-height: 28px;              
+    font-weight: 500;               
+    cursor: pointer;  
+}
+
+.todo-input button {
+    border: none;                   
+    border-radius: 9999px;          
+    background-color: #e96506;      
+    width: 128px;                   
+    height: 56px;                   
+    color: white;                   
+    font-size: 18px;                
+    line-height: 28px;              
+    font-weight: 500;               
+    cursor: pointer;  
+}
+
+.todo-input button:hover {
+    background-color: #0aab50;      
+}

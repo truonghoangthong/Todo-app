@@ -1,0 +1,7 @@
+.container {
+    background-color: #000000;   
+    display: grid;                
+    padding-top: 16px;           
+    padding-bottom: 16px;        
+    min-height: 100vh;            
+}

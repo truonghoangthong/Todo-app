@@ -1,0 +1,38 @@
+.todo-item-container {
+    display: flex;         
+    align-items: center;      
+    margin-top: 12px;         
+    margin-bottom: 12px;      
+    gap: 8px;  
+}
+
+.todo-task {
+    display: flex;            
+    flex: 1;                 
+    align-items: center;     
+    cursor: pointer;              
+}
+
+.done-icon {
+    width: 28px;
+}
+.not-complete {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #999;      /* Viền xám */
+    border-radius: 50%;          /* Bo tròn */
+}
+.todo-task p {
+    color: #334155;           
+    margin-left: 16px;        
+    font-size: 17px; 
+}
+.completed {
+    text-decoration: line-through;  
+    color: #999;                   
+}
+.delete-icon {
+    width: 20px;              
+    cursor: pointer;     
+}
